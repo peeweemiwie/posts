@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+#root {
+  height: 100vh;
+  background-color: #111;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  background-color: #444;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 0 2px 3px #555;
+  width: 800px;
+  border-radius: 3px;
+}
+.card h1,
+.card h3,
+.card p,
+.card label {
+    color: white;
+}
+
+.header {
+  background: #333;
+}
+.nav {
+  width: 800px;
+  margin: 0 auto;
+  padding: 1rem;  
+}
+.unordered-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin: 0 2rem 0 0;
+  padding: 0;  
+}
+
+.anchor {
+  text-decoration: none;
+  color: white;
+  transition: color .3s;
+}
+.anchor.blog-active,
+.anchor:active,
+.anchor:hover {
+  color: turquoise;
+  position: relative;
+}
+.anchor.blog-active:after {
+  display: block;
+  height: 3px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  background-color: turquoise;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
 }

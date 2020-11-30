@@ -1,0 +1,16 @@
+.Post {
+    align-items: center;
+    display: flex; 
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.Post:hover,
+.Post:active {
+    background-color: #111;
+}
+.Post .Section-title,
+.Post .Author {
+    color: white
+}
